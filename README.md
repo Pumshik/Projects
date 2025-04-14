@@ -49,4 +49,4 @@
 ## Тестирование
 Код готов к интеграции в тестовую среду:
 ```cpp
-#include "biginteger.h" ```
+#include "biginteger.h"
