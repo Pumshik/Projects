@@ -52,5 +52,5 @@
 
 ### Требования
 - Компилятор: C++17 (Clang/GCC)
-- Библиотеки: <algorithm>, <memory>, <stdexcept>
+- Библиотеки: `<algorithm>, <memory>, <stdexcept>`
 - Исключения: Включены (/EHsc для MSVC)
