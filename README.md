@@ -1,4 +1,4 @@
-# Custom String Class (C++17)
+# Custom String Class (C++)
 
 Реализация аналога `std::string` с ручным управлением памятью и оптимизированными операциями
 
