@@ -36,25 +36,28 @@
 ## Архитектура
 ### StackStorage
 - Запрет копирования
-- Методы allocate/deallocate с учётом выравнивания
+- Методы `allocate/deallocate` с учётом выравнивания
 
 ### StackAllocator
-- Реализация требований Allocator concept
-- Поддержка rebind для внутренних типов
+- Реализация требований Allocator concept, в частности 
+    - Конструктор копирования, деструктор, оператор присваивания
+    - Методы allocate, deallocate
+    - Внутренний тип value_type
+- Поддержка `rebind` для внутренних типов
 
 ### List
 
 **Оптимизации**:
-- [[no_unique_address]] для аллокатора
+- `[[no_unique_address]]` для аллокатора
 - EmptyBaseOptimisation
 
 **Итераторы**:
-- Bidirectional и reverse итераторы
-- Конверсия между const/non-const
+- `Bidirectional` и `reverse` итераторы
+- Конверсия между `const/non-const`
   
 ## Производительность
  - Кастомный итератор дает выигрыш в 10 раз в сравнении со стандартным
 
 ## Требования
 - Компилятор: C++17+
-- Библиотеки: <memory>, <type_traits>, <iterator>
+- Библиотеки: `<memory>`, `<type_traits>`, `<iterator>`
