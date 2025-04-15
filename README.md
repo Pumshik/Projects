@@ -12,11 +12,6 @@
 - **Выравнивание памяти**:
   - Гарантированное соблюдение alignment для типов
   - Использование `alignas(std::max_align_t)` для буфера
-- **Нулевые аллокации**:
-  ```cpp
-  StackStorage<1024> storage;
-  StackAllocator<int, 1024> alloc(storage);
-  std::list<int, decltype(alloc)> lst(alloc); // Без heap-аллокаций
 
 ### Класс List
 #### Особенности:
